@@ -4,27 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 font-sans">
-    <header class="bg-gray-800 text-white text-center py-6">
-        <h1 class="text-4xl">Olá, eu sou Beatriz Vieira</h1>
-        <p class="mt-2 text-lg">Desenvolvedor(a) | Apaixonado(a) por tecnologia</p>
-    </header>
-    <section class="max-w-4xl mx-auto mt-8">
-        <h2 class="text-2xl font-bold text-gray-800">Meus Projetos</h2>
-        <div class="mt-4 space-y-4">
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold">Projeto 1</h3>
-                <p class="text-gray-600">Descrição breve do projeto.</p>
-                <a href="https://github.com/seunome/projeto1" class="text-blue-600 hover:underline">Ver no GitHub</a>
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Meu Nome</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:underline">Home</a></li>
+                <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+                <li><a href="#projetos" class="hover:underline">Projetos</a></li>
+                <li><a href="#contato" class="hover:underline">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section id="home" class="bg-blue-500 text-white py-20 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Bem-vindo ao Meu Portfólio</h2>
+            <p class="text-lg">Desenvolvedor | Designer | Criador</p>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-16">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Sobre Mim</h3>
+            <p class="text-gray-700 max-w-2xl mx-auto">
+                Sou um desenvolvedor apaixonado por criar soluções modernas e eficientes. 
+                Trabalho com tecnologias como HTML, CSS, JavaScript e Tailwind CSS.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="bg-gray-200 py-16">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold text-center mb-10">Meus Projetos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Projeto 1</h4>
+                    <p class="text-gray-600">Descrição breve do projeto 1.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Projeto 2</h4>
+                    <p class="text-gray-600">Descrição breve do projeto 2.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-2">Projeto 3</h4>
+                    <p class="text-gray-600">Descrição breve do projeto 3.</p>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="text-center mt-8 text-gray-600">
-        <p>Contato: beatriz-vn@hotmail.com</p>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-16 text-center">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold mb-6">Entre em Contato</h3>
+            <p class="text-gray-700">Email: meuemail@exemplo.com</p>
+            <p class="text-gray-700">LinkedIn: /meu-perfil</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <<footer class="bg-blue-600 text-white p-4 text-center">
+        <p>&copy; 2025 Meu Nome. Todos os direitos reservados.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
